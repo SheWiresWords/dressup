@@ -1,1 +1,77 @@
-
+<!DOCTYPE html>
+<html>               
+<head>       
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dress Up Game</title>
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <main>
+    <h1 class="title">Dress Up!</h1>
+    <div class="game-container">
+      <div class="character-display">
+        <img id="base" src="images/body.png" alt="Base character" class="character-layer">
+        <img id="bot" src="" alt="Bottom" class="character-layer" style="display: none;">
+        <img id="shirt" src="" alt="Shirt" class="character-layer" style="display: none;">
+        <img id="hair" src="" alt="Hair" class="character-layer" style="display: none;">
+        <img id="acc" src="" alt="Accessory" class="character-layer" style="display: none;">
+        <img id="glasses" src="" alt="Glasses" class="character-layer" style="display: none;">
+      </div>
+      
+      <div class="controls">
+        <div class="category-control">
+          <h3>Bottom</h3>
+          <div class="control-buttons">
+            <button class="arrow-btn" data-category="bot" data-direction="prev">←</button>
+            <span class="item-counter" id="bot-counter">0/9</span>
+            <button class="arrow-btn" data-category="bot" data-direction="next">→</button>
+          </div>
+        </div>
+        
+        <div class="category-control">
+          <h3>Shirt</h3>
+          <div class="control-buttons">
+            <button class="arrow-btn" data-category="shirt" data-direction="prev">←</button>
+            <span class="item-counter" id="shirt-counter">0/6</span>
+            <button class="arrow-btn" data-category="shirt" data-direction="next">→</button>
+          </div>
+        </div>
+        
+        <div class="category-control">
+          <h3>Hair</h3>
+          <div class="control-buttons">
+            <button class="arrow-btn" data-category="hair" data-direction="prev">←</button>
+            <span class="item-counter" id="hair-counter">0/15</span>
+            <button class="arrow-btn" data-category="hair" data-direction="next">→</button>
+          </div>
+        </div>
+        
+        <div class="category-control">
+          <h3>Accessories</h3>
+          <div class="control-buttons">
+            <button class="arrow-btn" data-category="acc" data-direction="prev">←</button>
+            <span class="item-counter" id="acc-counter">0/5</span>
+            <button class="arrow-btn" data-category="acc" data-direction="next">→</button>
+          </div>
+        </div>
+        
+        <div class="category-control">
+          <h3>Glasses</h3>
+          <div class="control-buttons">
+            <button class="arrow-btn" data-category="glasses" data-direction="prev">←</button>
+            <span class="item-counter" id="glasses-counter">0/4</span>
+            <button class="arrow-btn" data-category="glasses" data-direction="next">→</button>
+          </div>
+        </div>
+        
+        <div class="reset-section">
+          <button id="reset-btn" class="reset-button">Reset All</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
