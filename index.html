@@ -9,6 +9,7 @@
 <body>                  
   <main>             
     <h1 class="title">Dress Up!</h1>
+    <!-- Made container and display for character to have them side by side on full screen-->
     <div class="game-container">
       <div class="character-display">
         <img id="base" src="images/body.png" alt="Base character" class="character-layer">
@@ -18,9 +19,11 @@
         <img id="acc" src="" alt="Accessory" class="character-layer" style="display: none;">
         <img id="glasses" src="" alt="Glasses" class="character-layer" style="display: none;">
       </div>
+
+     <!--buttons section-->
       
       <div class="controls">
-        <div class="category-control">
+        <div class="category-control"><!-- bot section-->
           <h3>Bottom</h3>
           <div class="control-buttons">
             <button class="arrow-btn" data-category="bot" data-direction="prev">←</button>
@@ -28,8 +31,8 @@
             <button class="arrow-btn" data-category="bot" data-direction="next">→</button>
           </div>
         </div>
-        
-        <div class="category-control">
+
+        <div class="category-control"> <!-- top section-->
           <h3>Shirt</h3>
           <div class="control-buttons">
             <button class="arrow-btn" data-category="shirt" data-direction="prev">←</button>
@@ -38,7 +41,7 @@
           </div>
         </div>
         
-        <div class="category-control">
+        <div class="category-control"><!-- hair section-->
           <h3>Hair</h3>
           <div class="control-buttons">
             <button class="arrow-btn" data-category="hair" data-direction="prev">←</button>
@@ -47,7 +50,7 @@
           </div>
         </div>
         
-        <div class="category-control">
+        <div class="category-control"><!-- acc section-->
           <h3>Accessories</h3>
           <div class="control-buttons">
             <button class="arrow-btn" data-category="acc" data-direction="prev">←</button>
@@ -56,7 +59,7 @@
           </div>
         </div>
         
-        <div class="category-control">
+        <div class="category-control"> <!-- glasses section-->
           <h3>Glasses</h3>
           <div class="control-buttons">
             <button class="arrow-btn" data-category="glasses" data-direction="prev">←</button>
@@ -65,7 +68,7 @@
           </div>
         </div>
         
-        <div class="reset-section">
+        <div class="reset-section"> <!-- reset button -->
           <button id="reset-btn" class="reset-button">Reset All</button>
         </div>
       </div>
