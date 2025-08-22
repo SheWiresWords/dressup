@@ -1,23 +1,23 @@
-class DressUpGame {
-  constructor() {
+class DressUpGame{
+  constructor(){
     this.categories = {
-      bot: { current: 1, max: 9 },
-      shirt: { current: 1, max: 6 },
-      hair: { current: 1, max: 15 },
-      acc: { current: 0, max: 5 },
+      bot: {current: 1, max: 9},
+      shirt: {current: 1, max: 6},
+      hair: {current: 1, max: 15},
+      acc: {current: 0, max: 5 },
       glasses: { current: 0, max: 4 }
     };
     
     this.init();
   }
   
-  init() {
+  init(){
     this.setupEventListeners();
     this.updateAllCounters();
     this.initializeDefaultLayers();
   }
   
-  setupEventListeners() {
+  setupEventListeners(){
     //arrow button clickers
     document.querySelectorAll('.arrow-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
@@ -33,7 +33,7 @@ class DressUpGame {
     });
   }
   
-  changeItem(category, direction) {
+  changeItem(category, direction){
     const categoryData = this.categories[category];
     
     //bottom and shirt doesn't have 0 option, always cycle with 1
@@ -80,7 +80,7 @@ class DressUpGame {
     counter.textContent = `${current}/${max}`;
   }
   
-  updateAllCounters(){
+  updateAllCounters(){//update counters
     Object.keys(this.categories).forEach(category => {
       this.updateCounter(category);
     });
