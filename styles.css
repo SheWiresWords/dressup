@@ -4,7 +4,7 @@ body{
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: linear-gradient(135deg, #d0dde2 0%, #16576e 100%);
+  background: linear-gradient(135deg, #ffe4e4 0%, #f1b7cd 100%);
   min-height: 100vh;   
 }    
                                 
@@ -84,7 +84,7 @@ main{
 }       
               
 .arrow-btn{     
-  background: #16576e;
+  background: #ffe4e4;
   color: white;
   border: none;      
   border-radius: 50%;
